@@ -18,14 +18,14 @@ Este proyecto está diseñado como **proyecto de portafolio profesional** para d
 
 ## 🏗️ Arquitectura del Pipeline
 
-┌─────────────┐
-│ Fuente CSV │
+┌─────────────┐<br>
+│ Fuente CSV  │<br>
 └──────┬──────┘
-↓
+       ↓
 ┌─────────────┐
-│ Ingesta │
+│   Ingesta   │
 └──────┬──────┘
-↓
+       ↓
 ┌─────────────┐
 │ Limpieza │
 └──────┬──────┘
@@ -42,9 +42,6 @@ Este proyecto está diseñado como **proyecto de portafolio profesional** para d
 │ Analytics │
 └─────────────┘
 
-yaml
-Copiar código
-
 ---
 
 ## 🔄 Flujo del Pipeline
@@ -57,9 +54,6 @@ Copiar código
 
 Salida:
 data/raw/
-
-yaml
-Copiar código
 
 ---
 
@@ -75,9 +69,6 @@ En este paso:
 Salida:
 data/clean/
 
-yaml
-Copiar código
-
 ---
 
 ### 3️⃣ Transformación de Datos
@@ -92,9 +83,6 @@ En este paso:
 
 Salida:
 data/processed/
-
-yaml
-Copiar código
 
 ---
 
@@ -142,16 +130,12 @@ data-engineering-pipeline/
 ├── README.md
 └── requirements.txt
 
-yaml
-Copiar código
-
 ---
 
 ## ▶️ Cómo Ejecutar el Pipeline
 
 Ejecutar todo el pipeline:
 
-```bash
 python pipelines/main.py
 O ejecutar por pasos:
 
@@ -236,9 +220,6 @@ Data Engineer / Analytics Engineer
 
 ⭐ Si te gustó este proyecto
 No olvides darle una estrella ⭐ al repo 😄
-
-yaml
-Copiar código
 
 ---
 
