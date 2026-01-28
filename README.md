@@ -20,27 +20,27 @@ Este proyecto está diseñado como **proyecto de portafolio profesional** para d
 
 ┌─────────────┐<br>
 │ Fuente CSV  │<br>
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│   Ingesta   │
-└──────┬──────┘
-       ↓
-┌─────────────┐
-│ Limpieza │
-└──────┬──────┘
-↓
-┌──────────────┐
-│Transformación│
-└──────┬───────┘
-↓
-┌──────────────┐
-│ DataWarehouse│
-└──────┬───────┘
-↓
-┌─────────────┐
-│ Analytics │
-└─────────────┘
+└──────┬──────┘<br>
+       ↓<br>
+┌─────────────┐<br>
+│   Ingesta   │<br>
+└──────┬──────┘<br>
+       ↓<br>
+┌─────────────┐<br>
+│  Limpieza   │<br>
+└──────┬──────┘<br> 
+       ↓<br>
+┌──────────────┐<br>
+│Transformación│<br>
+└──────┬───────┘<br>
+       ↓<br>
+┌──────────────┐<br>
+│ DataWarehouse│<br>
+└──────┬───────┘<br>
+       ↓<br>
+┌─────────────┐<br>
+│  Analytics  │<br>
+└─────────────┘<br>
 
 ---
 
@@ -109,26 +109,26 @@ Los datos quedan listos para:
 
 ## 📁 Estructura del Proyecto
 
-data-engineering-pipeline/
-│
-├── data/
-│ ├── raw/
-│ ├── clean/
-│ └── processed/
-│
-├── src/
-│ ├── ingest.py
-│ ├── clean.py
-│ ├── transform.py
-│ └── load.py
-│
-├── pipelines/
-│ └── main.py
-│
-├── tests/
-│
-├── README.md
-└── requirements.txt
+data-engineering-pipeline/<br>
+│<br>
+├── data/<br>
+│ ├── raw/<br>
+│ ├── clean/<br>
+│ └── processed/<br>
+│<br>
+├── src/<br>
+│ ├── ingest.py<br>
+│ ├── clean.py<br>
+│ ├── transform.py<br>
+│ └── load.py<br>
+│<br>
+├── pipelines/<br>
+│ └── main.py<br>
+│<br>
+├── tests/<br>
+│<br>
+├── README.md<br>
+└── requirements.txt<br>
 
 ---
 
@@ -139,101 +139,66 @@ Ejecutar todo el pipeline:
 python pipelines/main.py
 O ejecutar por pasos:
 
-bash
-Copiar código
-python src/ingest.py
-python src/clean.py
-python src/transform.py
-python src/load.py
-🛠️ Tecnologías Utilizadas
+bash<br>
+Copiar código<br>
+python src/ingest.py<br>
+python src/clean.py<br>
+python src/transform.py<br>
+python src/load.py<br>
+
+🛠️ Tecnologías Utilizadas<br>
 Python
-
 Pandas o Polars
-
 SQL
-
 DuckDB / PostgreSQL / SQLite
-
 (Opcional en el futuro)
-
 Airflow o Prefect
-
 Docker
 
 📊 Ejemplo del Dataset Final
 Tabla: fact_sales
 
-date	product	country	quantity	revenue
-2024-01-01	Laptop	MX	2	2400
-2024-01-02	Mouse	CO	5	250
+date	product	country	quantity	revenue<br>
+2024-01-01	Laptop	MX	2	2400<br>
+2024-01-02	Mouse	CO	5	250<br>
 
-🧠 Principios de Diseño
-Este pipeline fue diseñado para ser:
+🧠 Principios de Diseño<br>
 
-✅ Modular
+Este pipeline fue diseñado para ser:<br>
 
-✅ Reproducible
+✅ Modular<br>
+✅ Reproducible<br>
+✅ Escalable<br>
+✅ Fácil de mantener<br>
+✅ Fácil de orquestar en producción<br>
 
-✅ Escalable
+Cada etapa:<br>
 
-✅ Fácil de mantener
+Tiene inputs y outputs bien definidos<br>
+Puede ejecutarse de forma independiente<br>
+Puede integrarse con Airflow, Prefect o Dagster<br>
 
-✅ Fácil de orquestar en producción
+🏆 Objetivo del Proyecto<br>
 
-Cada etapa:
+Este proyecto demuestra:<br>
+Buenas prácticas de Data Engineering<br>
+Diseño de pipelines reales<br>
+Organización de proyectos de datos<br>
+Separación por capas (raw / clean / processed)<br>
+Carga en Data Warehouse<br>
+Preparación de datos analíticos<br>
 
-Tiene inputs y outputs bien definidos
+🚀 Roadmap<br>
 
-Puede ejecutarse de forma independiente
+ Agregar orquestación con Airflow o Prefect<br>
+ Agregar validaciones con Great Expectations<br>
+ Agregar tests automáticos<br>
+ Dockerizar el proyecto<br>
+ Agregar CI/CD<br>
 
-Puede integrarse con Airflow, Prefect o Dagster
-
-🏆 Objetivo del Proyecto
-Este proyecto demuestra:
-
-Buenas prácticas de Data Engineering
-
-Diseño de pipelines reales
-
-Organización de proyectos de datos
-
-Separación por capas (raw / clean / processed)
-
-Carga en Data Warehouse
-
-Preparación de datos analíticos
-
-🚀 Roadmap
- Agregar orquestación con Airflow o Prefect
-
- Agregar validaciones con Great Expectations
-
- Agregar tests automáticos
-
- Dockerizar el proyecto
-
- Agregar CI/CD
-
-👤 Autor
-Tu Nombre Aquí
-Data Engineer / Analytics Engineer
+👤 Autor<br>
+Tu Nombre Aquí<br>
+Data Engineer / Analytics Engineer<br>
 
 ⭐ Si te gustó este proyecto
 No olvides darle una estrella ⭐ al repo 😄
-
----
-
-# ✅ Ahora sí
-
-✔ Es **un solo bloque**  
-✔ No hay partes sueltas  
-✔ No hay que copiar nada por separado  
-✔ Pegas esto en `README.md` y listo  
-
----
-
-Si quieres, en el próximo mensaje lo adaptamos:
-
-- A tu **stack real**
-- A **inglés**
-- O a **nivel más avanzado / más simple** según lo que quieras mostrar en tu portafolio.
