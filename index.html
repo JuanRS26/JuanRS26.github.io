@@ -2,207 +2,192 @@
 <html lang="es">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Rodriguez | Data Engineer</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="styles.css">
 
-<title>Juan Rodriguez | Data Engineer</title>
-
-<link rel="stylesheet" href="styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-
-<nav class="nav">
-
-<div class="logo">JR</div>
-
-<div class="nav-links">
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#">GitHub</a>
-<a href="#">LinkedIn</a>
-</div>
-
-</nav>
-
-
-
-<section class="hero">
-
-<div class="hero-text">
-
-<h1>Data Engineer</h1>
-
-<p class="hero-subtitle">
-Designing scalable data pipelines and modern architectures
-for high performance analytics.
-</p>
-
-</div>
-
-<div class="hero-photo">
-
-<img src="Imagenes/Photo_Perfil.jpg">
-
-<p class="hero-name">
-Juan Esteban Rodriguez Salcedo
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="about" class="about">
-
-<div class="about-image">
-
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
-
-</div>
-
-<div class="about-text">
-
-<h2>About Me</h2>
-
-<p>
-
-I am a Data Engineer focused on building robust data pipelines
-and scalable architectures that transform raw information into
-valuable insights.
-
-My experience includes working with relational databases,
-data processing systems and analytics pipelines designed
-for high performance environments.
-
-I enjoy designing efficient solutions that help organizations
-make better decisions using data.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<section id="experience" class="experience">
-
-<h2>Professional Experience</h2>
-
-<div class="timeline">
-
-<div class="job">
-
-<h3>Data Analyst / Database Specialist</h3>
-
-<span>Company Name • 2023 - 2024</span>
-
-<p>
-
-Worked with relational databases managing large datasets,
-optimizing SQL queries and supporting business analytics.
-Collaborated with technical teams to maintain data integrity
-and improve reporting systems.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="projects" class="projects">
-
-<h2>Selected Projects</h2>
-
-<div class="projects-grid">
-
-
-<div class="project-card" onclick="openProject('project1')">
-
-<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31">
-
-<div class="project-info">
-
-<h3>TaskFlow Data Pipeline</h3>
-
-<p>ETL pipeline for task analytics</p>
-
-</div>
-
-</div>
-
-
-
-<div class="project-card" onclick="openProject('project2')">
-
-<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
-
-<div class="project-info">
-
-<h3>ShopWave Analytics</h3>
-
-<p>E-commerce data architecture</p>
-
-</div>
-
-</div>
-
-
-
-<div class="project-card" onclick="openProject('project3')">
-
-<img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd">
-
-<div class="project-info">
-
-<h3>TravelMap Insights</h3>
-
-<p>Geospatial data processing</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<div id="modal" class="modal">
-
-<div class="modal-content">
-
-<span class="close" onclick="closeModal()">&times;</span>
-
-<div id="modal-body"></div>
-
-</div>
-
-</div>
-
-
-
-<footer>
-
-<p>© 2026 Juan Rodriguez</p>
-
-</footer>
-
-
-<script src="script.js"></script>
+  <!-- ========================================
+       NAVIGATION
+       ======================================== -->
+  <nav class="nav">
+    <div class="logo">JR</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="https://github.com/JuanRS26" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/juan-rodriguez-salcedo" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+
+  <!-- ========================================
+       HERO SECTION
+       ======================================== -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Data Engineer</h1>
+      <p class="hero-subtitle">
+        Designing scalable data pipelines and modern architectures for high performance analytics.
+      </p>
+    </div>
+
+    <div class="hero-photo">
+      <img src="Images/Photo_Perfil.jpg" alt="Juan Rodriguez">
+      <p class="hero-name">Juan Esteban Rodriguez Salcedo</p>
+    </div>
+  </section>
+
+  <!-- ========================================
+       TECH STACK SECTION
+       ======================================== -->
+  <section class="tech">
+    <h2>Tech Stack</h2>
+
+    <div class="tech-carousel">
+      <div class="tech-track">
+        <!-- Items originales -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <span>Python</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+          <span>SQL</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+          <span>Docker</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Airflow">
+          <span>Airflow</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+          <span>PostgreSQL</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
+          <span>AWS</span>
+        </div>
+
+        <!-- Duplicados para loop infinito -->
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <span>Python</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+          <span>SQL</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+          <span>Docker</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Airflow">
+          <span>Airflow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       ABOUT ME SECTION
+       ======================================== -->
+  <section id="about" class="about">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="About Me">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am a Data Engineer focused on building robust data pipelines and scalable architectures that transform raw information into valuable insights.
+        My experience includes working with relational databases, data processing systems and analytics pipelines designed for high performance environments.
+        I enjoy designing efficient solutions that help organizations make better decisions using data.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================
+       EXPERIENCE / TIMELINE
+       ======================================== -->
+  <section id="experience" class="experience">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+      <div class="job">
+        <h3>Data Analyst / Database Specialist</h3>
+        <span>Company Name • 2023 - 2024</span>
+        <p>
+          Worked with relational databases managing large datasets, optimizing SQL queries and supporting business analytics.
+          Collaborated with technical teams to maintain data integrity and improve reporting systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       PROJECTS SECTION
+       ======================================== -->
+  <section id="projects" class="projects">
+    <h2>Selected Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card" onclick="openProject('project1')">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31" alt="TaskFlow Data Pipeline">
+        <div class="project-info">
+          <h3>TaskFlow Data Pipeline</h3>
+          <p>ETL pipeline for task analytics</p>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openProject('project2')">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="ShopWave Analytics">
+        <div class="project-info">
+          <h3>ShopWave Analytics</h3>
+          <p>E-commerce data architecture</p>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openProject('project3')">
+        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd" alt="TravelMap Insights">
+        <div class="project-info">
+          <h3>TravelMap Insights</h3>
+          <p>Geospatial data processing</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================
+       MODAL
+       ======================================== -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer>
+    <p>© 2026 Juan Rodriguez</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
 
 </body>
 </html>

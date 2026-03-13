@@ -1,393 +1,407 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
+/* ========================================
+   RESET & GLOBAL
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-
-font-family:'Inter',sans-serif;
-
-color:#1e293b;
-
-background:
-radial-gradient(circle at 10% 10%, #e0e7ff, transparent 40%),
-radial-gradient(circle at 90% 30%, #cffafe, transparent 40%),
-#f8fafc;
-
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+  background:
+    radial-gradient(circle at 10% 10%, #e0e7ff, transparent 40%),
+    radial-gradient(circle at 90% 30%, #cffafe, transparent 40%),
+    #f8fafc;
 }
 
-
-
-/* NAV */
-
-.nav{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:25px 10%;
-
-flex-wrap:wrap;
-
+/* ========================================
+   NAVIGATION
+   ======================================== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 10%;
+  flex-wrap: wrap;
 }
 
-.logo{
-
-font-family:'Space Grotesk';
-font-weight:700;
-font-size:22px;
-
+.logo {
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+  font-size: 22px;
 }
 
-.nav-links{
-
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.nav-links a{
-
-text-decoration:none;
-color:#1e293b;
-font-size:14px;
-transition:0.3s;
-
+.nav-links a {
+  text-decoration: none;
+  color: #1e293b;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
-.nav-links a:hover{
-color:#6366f1;
+.nav-links a:hover {
+  color: #6366f1;
 }
 
-
-
-/* HERO */
-
-.hero{
-
-display:grid;
-grid-template-columns:1fr 1fr;
-
-align-items:center;
-
-padding:80px 10%;
-
-gap:40px;
-
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 30px 10%;
+  gap: 40px;
 }
 
-.hero-text h1{
-
-font-family:'Space Grotesk';
-font-size:64px;
-margin-bottom:20px;
-
+.hero-text h1 {
+  font-family: 'Space Grotesk';
+  font-size: 64px;
+  margin-bottom: 20px;
 }
 
-.hero-subtitle{
-
-font-size:18px;
-color:#475569;
-
+.hero-subtitle {
+  font-size: 18px;
+  color: #475569;
 }
 
-.hero-photo{
-
-text-align:center;
-
+.hero-photo {
+  text-align: center;
 }
 
-.hero-photo img{
-
-width:260px;
-border-radius:16px;
-
+.hero-photo img {
+  width: 260px;
+  border-radius: 16px;
 }
 
-.hero-name{
-
-margin-top:12px;
-font-weight:500;
-
+.hero-name {
+  margin-top: 12px;
+  font-weight: 500;
 }
 
-
-
-/* ABOUT */
-
-.about{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:60px;
-
-padding:80px 10%;
-
-align-items:center;
-
-background:linear-gradient(180deg,#ffffff,#f1f5f9);
-
+/* ========================================
+   TECH STACK
+   ======================================== */
+.tech {
+  padding: 60px 10%;
+  text-align: center;
+  background: linear-gradient(180deg, #eef2ff, #f8fafc);
+  overflow: hidden;
 }
 
-.about-image img{
-
-width:100%;
-border-radius:12px;
-
+.tech h2 {
+  font-family: 'Space Grotesk';
+  font-size: 32px;
+  margin-bottom: 35px;
 }
 
-.about-text h2{
-
-font-family:'Space Grotesk';
-
-font-size:38px;
-
-margin-bottom:20px;
-
+.tech-carousel {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-.about-text p{
-
-line-height:1.7;
-
-color:#475569;
-
+.tech-track {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  animation: scrollTech 22s linear infinite;
 }
 
-
-
-/* EXPERIENCE */
-
-.experience{
-
-padding:80px 10%;
-
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  font-size: 12px;
+  color: #475569;
 }
 
-.experience h2{
-
-font-family:'Space Grotesk';
-
-font-size:38px;
-
-margin-bottom:40px;
-
+.tech-item img {
+  height: 28px;
+  margin-bottom: 6px;
 }
 
-.timeline{
-
-border-left:3px solid #6366f1;
-
-padding-left:25px;
-
+@keyframes scrollTech {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.job{
-
-margin-bottom:40px;
-
+/* ========================================
+   ABOUT ME SECTION
+   ======================================== */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 80px 10%;
+  align-items: center;
+  background: linear-gradient(180deg, #ffffff, #f1f5f9);
 }
 
-.job h3{
-
-font-family:'Space Grotesk';
-
-margin-bottom:5px;
-
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
 }
 
-.job span{
-
-font-size:14px;
-
-color:#64748b;
-
+.about-text h2 {
+  font-family: 'Space Grotesk';
+  font-size: 38px;
+  margin-bottom: 20px;
 }
 
-.job p{
-
-margin-top:10px;
-
-color:#475569;
-
+.about-text p {
+  line-height: 1.7;
+  color: #475569;
 }
 
-
-
-/* PROJECTS */
-
-.projects{
-
-padding:80px 10%;
-
-background:linear-gradient(180deg,#f8fafc,#eef2ff);
-
+/* ========================================
+   EXPERIENCE / TIMELINE
+   ======================================== */
+.experience {
+  padding: 80px 10%;
 }
 
-.projects h2{
-
-font-family:'Space Grotesk';
-
-font-size:38px;
-
-margin-bottom:40px;
-
+.experience h2 {
+  font-family: 'Space Grotesk';
+  font-size: 38px;
+  margin-bottom: 40px;
 }
 
-.projects-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
+.timeline {
+  border-left: 3px solid #6366f1;
+  padding-left: 25px;
 }
 
-.project-card{
-
-background:white;
-
-border-radius:14px;
-
-overflow:hidden;
-
-cursor:pointer;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-
-transition:0.3s;
-
+.job {
+  margin-bottom: 40px;
 }
 
-.project-card:hover{
-
-transform:translateY(-8px);
-
+.job h3 {
+  font-family: 'Space Grotesk';
+  margin-bottom: 5px;
 }
 
-.project-card img{
-
-width:100%;
-height:180px;
-object-fit:cover;
-
+.job span {
+  font-size: 14px;
+  color: #64748b;
 }
 
-.project-info{
-
-padding:20px;
-
+.job p {
+  margin-top: 10px;
+  color: #475569;
 }
 
-.project-info h3{
-
-font-family:'Space Grotesk';
-
-margin-bottom:6px;
-
+/* ========================================
+   PROJECTS SECTION
+   ======================================== */
+.projects {
+  padding: 80px 10%;
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
 }
 
-
-
-/* MODAL */
-
-.modal{
-
-display:none;
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:rgba(0,0,0,0.6);
-
-justify-content:center;
-align-items:center;
-
+.projects h2 {
+  font-family: 'Space Grotesk';
+  font-size: 38px;
+  margin-bottom: 40px;
 }
 
-.modal-content{
-
-background:white;
-
-padding:30px;
-
-border-radius:10px;
-
-max-width:700px;
-width:90%;
-
-position:relative;
-
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
-.close{
-
-position:absolute;
-
-top:15px;
-right:20px;
-
-font-size:28px;
-
-cursor:pointer;
-
+.project-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
 }
 
-
-
-/* FOOTER */
-
-footer{
-
-text-align:center;
-
-padding:40px;
-
-margin-top:60px;
-
-background:#0f172a;
-
-color:white;
-
+.project-card:hover {
+  transform: translateY(-8px);
 }
 
-
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-.hero{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.about{
-
-grid-template-columns:1fr;
-
+.project-info {
+  padding: 20px;
 }
 
-.nav{
-
-flex-direction:column;
-gap:10px;
-
+.project-info h3 {
+  font-family: 'Space Grotesk';
+  margin-bottom: 6px;
 }
 
+/* ===========================
+   MODAL
+=========================== */
+
+.modal {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+
+  /* agregado para prevenir “flash” al cargar */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  display: flex;       /* se activa al abrir */
+  visibility: visible;
+  opacity: 1;
+}
+
+/* CONTENIDO DEL MODAL */
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  font-family: 'Space Grotesk';
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  margin-top: 15px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* ========================================
+   ARCHITECTURE VISUAL (PROJECT MODAL)
+   ======================================== */
+.architecture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0 20px;
+}
+
+.arch-box {
+  background: #eef2ff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.arch-box span {
+  display: block;
+  font-size: 11px;
+  color: #6366f1;
+  margin-top: 4px;
+}
+
+.arch-arrow {
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+/* Arquitectura en móvil */
+@media (max-width: 600px) {
+  .architecture {
+    flex-direction: column;
+  }
+  .arch-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+  text-align: center;
+  padding: 40px;
+  margin-top: 60px;
+  background: #0f172a;
+  color: white;
+}
+
+/* ========================================
+   BUTTONS (GITHUB)
+   ======================================== */
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: #111827;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.github-btn img {
+  height: 18px;
+  filter: invert(1);
+}
+
+/* ========================================
+   RESPONSIVE GENERAL
+   ======================================== */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
