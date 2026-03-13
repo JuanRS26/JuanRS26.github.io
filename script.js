@@ -6,8 +6,8 @@ image:"images/project1.jpg",
 description:"Sistema colaborativo para gestión de tareas.",
 details:"TaskFlow es una plataforma diseñada para equipos remotos que necesitan organizar tareas, proyectos y deadlines. Incluye notificaciones en tiempo real, paneles colaborativos y seguimiento de progreso.",
 tech:["React","Node.js","MongoDB","Socket.io"],
-github:"https://github.com/alejandrodev/taskflow",
-demo:"https://taskflow-demo.com"
+github:"https://github.com/",
+demo:"#"
 },
 
 project2:{
@@ -16,8 +16,8 @@ image:"images/project2.jpg",
 description:"Solución e-commerce completa.",
 details:"ShopWave permite a pequeñas empresas crear tiendas online modernas con carrito de compra, pagos integrados y panel administrativo avanzado.",
 tech:["Vue","Firebase","Stripe API"],
-github:"https://github.com/alejandrodev/shopwave",
-demo:"https://shopwave-demo.com"
+github:"https://github.com/",
+demo:"#"
 },
 
 project3:{
@@ -26,8 +26,8 @@ image:"images/project3.jpg",
 description:"Planificador inteligente de viajes.",
 details:"TravelMap permite crear rutas de viaje interactivas utilizando mapas dinámicos, recomendaciones automáticas de lugares y planificación de itinerarios.",
 tech:["JavaScript","Leaflet.js","Express"],
-github:"https://github.com/alejandrodev/travelmap",
-demo:"https://travelmap-demo.com"
+github:"https://github.com/",
+demo:"#"
 }
 
 }
@@ -60,15 +60,23 @@ ${project.tech.map(t=>`<span>${t}</span>`).join("")}
 `
 
 modal.style.display="flex"
+
 }
+
 
 function closeModal(){
+
 document.getElementById("modal").style.display="none"
+
 }
 
+
 window.onclick=function(e){
+
 const modal=document.getElementById("modal")
+
 if(e.target==modal){
 modal.style.display="none"
 }
+
 }
