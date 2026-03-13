@@ -1,41 +1,30 @@
 const projects = {
 
 project1:{
-title:"TaskFlow",
-image:"images/project1.jpg",
-description:"Sistema colaborativo para gestión de tareas.",
-details:"TaskFlow es una plataforma diseñada para equipos remotos que necesitan organizar tareas, proyectos y deadlines. Incluye notificaciones en tiempo real, paneles colaborativos y seguimiento de progreso.",
-tech:["React","Node.js","MongoDB","Socket.io"],
-github:"https://github.com/",
-demo:"#"
+title:"TaskFlow Data Pipeline",
+description:"Pipeline designed to process and analyze team productivity data.",
+tech:"Python, Airflow, PostgreSQL"
 },
 
 project2:{
-title:"ShopWave",
-image:"images/project2.jpg",
-description:"Solución e-commerce completa.",
-details:"ShopWave permite a pequeñas empresas crear tiendas online modernas con carrito de compra, pagos integrados y panel administrativo avanzado.",
-tech:["Vue","Firebase","Stripe API"],
-github:"https://github.com/",
-demo:"#"
+title:"ShopWave Analytics",
+description:"Data warehouse and analytics platform for e-commerce insights.",
+tech:"Spark, AWS, SQL"
 },
 
 project3:{
-title:"TravelMap",
-image:"images/project3.jpg",
-description:"Planificador inteligente de viajes.",
-details:"TravelMap permite crear rutas de viaje interactivas utilizando mapas dinámicos, recomendaciones automáticas de lugares y planificación de itinerarios.",
-tech:["JavaScript","Leaflet.js","Express"],
-github:"https://github.com/",
-demo:"#"
+title:"TravelMap Insights",
+description:"Geospatial data processing pipeline for travel recommendations.",
+tech:"Python, GeoPandas, Docker"
 }
 
 }
 
 
-function openModal(projectId){
 
-const project = projects[projectId]
+function openProject(id){
+
+const project = projects[id]
 
 const modal = document.getElementById("modal")
 const body = document.getElementById("modal-body")
@@ -44,18 +33,9 @@ body.innerHTML = `
 
 <h2>${project.title}</h2>
 
-<img src="${project.image}">
+<p>${project.description}</p>
 
-<p>${project.details}</p>
-
-<div class="tech">
-${project.tech.map(t=>`<span>${t}</span>`).join("")}
-</div>
-
-<div class="links">
-<a href="${project.github}" target="_blank">GitHub</a>
-<a href="${project.demo}" target="_blank">Demo</a>
-</div>
+<p><strong>Technologies:</strong> ${project.tech}</p>
 
 `
 
@@ -64,11 +44,13 @@ modal.style.display="flex"
 }
 
 
+
 function closeModal(){
 
 document.getElementById("modal").style.display="none"
 
 }
+
 
 
 window.onclick=function(e){
