@@ -1,3 +1,6 @@
+/* =========================
+   RESET
+========================= */
 
 *{
   margin:0;
@@ -21,6 +24,10 @@ a{
   text-decoration:none;
 }
 
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar{
   width:100%;
   display:flex;
@@ -33,31 +40,38 @@ a{
   z-index:100;
 }
 
+/* LOGO */
+
 .logo{
   display:flex;
   align-items:center;
-  gap:14px;
+  gap:10px;
 }
 
 .logo img{
-  width:70px;
-  border-radius:8px;
+  width:110px;
+  height:auto;
+  object-fit:contain;
 }
 
 .logo-text h2{
-  font-size:1.2rem;
+  font-size:1.35rem;
   font-weight:800;
+  line-height:1;
 }
 
 .logo-text p{
-  font-size:.75rem;
+  font-size:.8rem;
   color:#d6d6d6;
+  margin-top:4px;
 }
 
 .logo-text span{
-  font-size:.7rem;
+  font-size:.72rem;
   color:#89a96b;
 }
+
+/* NAV */
 
 nav{
   display:flex;
@@ -68,11 +82,16 @@ nav a{
   color:white;
   font-size:.92rem;
   transition:.3s;
+  font-weight:500;
 }
 
 nav a:hover{
   color:#89a96b;
 }
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
   min-height:100vh;
@@ -99,6 +118,7 @@ nav a:hover{
   color:#89a96b;
   letter-spacing:1px;
   font-size:.9rem;
+  font-weight:600;
 }
 
 .hero-content h1{
@@ -112,7 +132,12 @@ nav a:hover{
   max-width:540px;
   color:#d0d0d0;
   margin-bottom:32px;
+  font-size:1.05rem;
 }
+
+/* =========================
+   BUTTONS
+========================= */
 
 .btn-primary,
 .btn-secondary{
@@ -142,6 +167,10 @@ nav a:hover{
   color:black;
 }
 
+/* =========================
+   SECTIONS
+========================= */
+
 .services,
 .projects{
   padding:100px 6%;
@@ -154,12 +183,17 @@ nav a:hover{
 .section-title span{
   color:#89a96b;
   font-size:.9rem;
+  font-weight:600;
 }
 
 .section-title h2{
   font-size:2.4rem;
   margin-top:10px;
 }
+
+/* =========================
+   SERVICES
+========================= */
 
 .service-grid{
   display:grid;
@@ -186,12 +220,17 @@ nav a:hover{
 
 .card h3{
   margin-bottom:12px;
+  font-size:1.1rem;
 }
 
 .card p{
   color:#c5c5c5;
   font-size:.95rem;
 }
+
+/* =========================
+   PROJECTS
+========================= */
 
 .project-grid{
   display:grid;
@@ -219,6 +258,10 @@ nav a:hover{
   margin-top:50px;
 }
 
+/* =========================
+   CTA
+========================= */
+
 .cta{
   padding:90px 6%;
   background:linear-gradient(90deg,#1f2d16,#89a96b);
@@ -233,6 +276,7 @@ nav a:hover{
 
 .cta-content span{
   color:#d8e7c6;
+  font-weight:600;
 }
 
 .cta-content h2{
@@ -240,6 +284,10 @@ nav a:hover{
   margin-top:10px;
   max-width:700px;
 }
+
+/* =========================
+   FOOTER
+========================= */
 
 .footer{
   background:black;
@@ -260,7 +308,8 @@ nav a:hover{
 }
 
 .footer-brand img{
-  width:70px;
+  width:90px;
+  object-fit:contain;
 }
 
 .footer-brand p{
@@ -280,7 +329,9 @@ nav a:hover{
   font-size:.9rem;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media(max-width:1100px){
 
@@ -295,6 +346,7 @@ nav a:hover{
   .hero-content h1{
     font-size:3.6rem;
   }
+
 }
 
 @media(max-width:800px){
@@ -302,6 +354,7 @@ nav a:hover{
   .navbar{
     flex-direction:column;
     gap:20px;
+    padding-top:30px;
   }
 
   nav{
@@ -331,6 +384,28 @@ nav a:hover{
   .footer-top{
     flex-direction:column;
   }
+
+  /* LOGO RESPONSIVE */
+
+  .logo{
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+  }
+
+  .logo img{
+    width:85px;
+  }
+
+  .logo-text h2{
+    font-size:1.1rem;
+  }
+
+  .logo-text p{
+    font-size:.72rem;
+  }
+
 }
 
 @media(max-width:560px){
@@ -353,8 +428,16 @@ nav a:hover{
     text-align:center;
   }
 
-  .logo{
-    flex-direction:column;
-    text-align:center;
+  nav{
+    gap:14px;
   }
+
+  nav a{
+    font-size:.82rem;
+  }
+
+  .logo img{
+    width:72px;
+  }
+
 }
