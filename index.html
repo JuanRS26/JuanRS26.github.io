@@ -1,193 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan Rodriguez | Data Engineer</title>
-
-  <!-- ESTILOS -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- FUENTES -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fredy Santana | Proyectos y Obras</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- ========================================
-       NAVIGATION
-       ======================================== -->
-  <nav class="nav">
-    <div class="logo">JR</div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="https://github.com/JuanRS26" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/juan-rodriguez-salcedo" target="_blank">LinkedIn</a>
-    </div>
-  </nav>
-
-  <!-- ========================================
-       HERO SECTION
-       ======================================== -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Data Engineer</h1>
-      <p class="hero-subtitle">
-        Designing scalable data pipelines and modern architectures for high performance analytics.
-      </p>
-    </div>
-
-    <div class="hero-photo">
-      <img src="Images/Photo_Perfil.jpg" alt="Juan Rodriguez">
-      <p class="hero-name">Juan Esteban Rodriguez Salcedo</p>
-    </div>
-  </section>
-
-  <!-- ========================================
-       TECH STACK SECTION
-       ======================================== -->
-  <section class="tech">
-    <h2>Tech Stack</h2>
-
-    <div class="tech-carousel">
-      <div class="tech-track">
-        <!-- Items originales -->
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-          <span>Python</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
-          <span>SQL</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-          <span>Docker</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Airflow">
-          <span>Airflow</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
-          <span>PostgreSQL</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
-          <span>AWS</span>
-        </div>
-
-        <!-- Duplicados para loop infinito -->
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-          <span>Python</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
-          <span>SQL</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-          <span>Docker</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Airflow">
-          <span>Airflow</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================
-       ABOUT ME SECTION
-       ======================================== -->
-  <section id="about" class="about">
-    <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="About Me">
-    </div>
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        I am a Data Engineer focused on building robust data pipelines and scalable architectures that transform raw information into valuable insights.
-        My experience includes working with relational databases, data processing systems and analytics pipelines designed for high performance environments.
-        I enjoy designing efficient solutions that help organizations make better decisions using data.
-      </p>
-    </div>
-  </section>
-
-  <!-- ========================================
-       EXPERIENCE / TIMELINE
-       ======================================== -->
-  <section id="experience" class="experience">
-    <h2>Professional Experience</h2>
-    <div class="timeline">
-      <div class="job">
-        <h3>Data Analyst / Database Specialist</h3>
-        <span>Company Name • 2023 - 2024</span>
-        <p>
-          Worked with relational databases managing large datasets, optimizing SQL queries and supporting business analytics.
-          Collaborated with technical teams to maintain data integrity and improve reporting systems.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================
-       PROJECTS SECTION
-       ======================================== -->
-  <section id="projects" class="projects">
-    <h2>Selected Projects</h2>
-    <div class="projects-grid">
-
-      <div class="project-card" onclick="openProject('project1')">
-        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31" alt="TaskFlow Data Pipeline">
-        <div class="project-info">
-          <h3>TaskFlow Data Pipeline</h3>
-          <p>ETL pipeline for task analytics</p>
-        </div>
-      </div>
-
-      <div class="project-card" onclick="openProject('project2')">
-        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="ShopWave Analytics">
-        <div class="project-info">
-          <h3>ShopWave Analytics</h3>
-          <p>E-commerce data architecture</p>
-        </div>
-      </div>
-
-      <div class="project-card" onclick="openProject('project3')">
-        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd" alt="TravelMap Insights">
-        <div class="project-info">
-          <h3>TravelMap Insights</h3>
-          <p>Geospatial data processing</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ========================================
-       MODAL
-       ======================================== -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <div id="modal-body"></div>
+<header class="navbar">
+  <div class="logo">
+    <img src="https://placehold.co/120x120/0f2f22/89a96b?text=FS" alt="Logo">
+    <div class="logo-text">
+      <h2>FREDY SANTANA</h2>
+      <p>PROYECTOS Y OBRAS</p>
+      <span>MENORCA | EST.1989</span>
     </div>
   </div>
 
-  <!-- ========================================
-       FOOTER
-       ======================================== -->
-  <footer>
-    <p>© 2026 Juan Rodriguez</p>
-  </footer>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Nosotros</a>
+    <a href="#">Servicios</a>
+    <a href="#">Proyectos</a>
+    <a href="#">Contacto</a>
+  </nav>
+</header>
 
-  <!-- SCRIPTS -->
-  <script src="script.js"></script>
+<section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <span>CONSTRUCCIÓN EN MENORCA</span>
+    <h1>CONSTRUIMOS<br>CALIDAD.<br>CREAMOS<br>HOGARES.</h1>
+    <p>
+      Construcción, reformas y gestión de proyectos en Menorca
+      con la máxima profesionalidad.
+    </p>
+
+    <a href="#" class="btn-primary">SOLICITAR PRESUPUESTO</a>
+  </div>
+</section>
+
+<section class="services">
+  <div class="section-title">
+    <span>NUESTROS SERVICIOS</span>
+    <h2>Soluciones integrales para cada proyecto</h2>
+  </div>
+
+  <div class="service-grid">
+    <div class="card">
+      <div class="icon">🏠</div>
+      <h3>Obra nueva</h3>
+      <p>Diseño y construcción de viviendas modernas y personalizadas.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <h3>Reformas integrales</h3>
+      <p>Transformamos espacios con acabados de alta calidad.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📐</div>
+      <h3>Rehabilitaciones</h3>
+      <p>Recuperamos y mejoramos edificios manteniendo su esencia.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👷</div>
+      <h3>Gestión de proyectos</h3>
+      <p>Coordinamos cada etapa para garantizar resultados óptimos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="projects">
+  <div class="section-title">
+    <span>PROYECTOS DESTACADOS</span>
+    <h2>Últimos trabajos realizados</h2>
+  </div>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop" alt="">
+    </div>
+
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop" alt="">
+    </div>
+
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop" alt="">
+    </div>
+  </div>
+
+  <div class="center">
+    <a href="#" class="btn-secondary">VER TODOS LOS PROYECTOS</a>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta-content">
+    <div>
+      <span>HABLEMOS DE TU PROYECTO</span>
+      <h2>Construimos espacios que duran generaciones.</h2>
+    </div>
+
+    <a href="#" class="btn-primary">CONTACTAR</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="https://placehold.co/80x80/0f2f22/89a96b?text=FS" alt="">
+      <div>
+        <h3>FREDY SANTANA</h3>
+        <p>PROYECTOS Y OBRAS</p>
+      </div>
+    </div>
+
+    <div class="footer-info">
+      <p>📞 +34 971 00 00 00</p>
+      <p>✉ info@fredysantana.es</p>
+      <p>📍 Menorca, Islas Baleares</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Fredy Santana S.L. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
 </body>
 </html>
