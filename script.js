@@ -28,33 +28,40 @@ const projects = {
     github: "https://github.com/tuusuario/taskflow"
   },
 
-  project2: {
-    title: "ShopWave Analytics",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
-    description: "Arquitectura de datos para analítica e-commerce.",
-    details: `
-      <p>
-        Sistema de ingesta y procesamiento de datos de ventas que permite analizar 
-        comportamiento de clientes, tendencias de compra y rendimiento de productos.
-      </p>
-    `,
-    tech: ["Spark", "AWS", "SQL"],
-    github: "https://github.com/tuusuario/shopwave"
-  },
 
-  project3: {
-    title: "TravelMap Insights",
-    image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
-    description: "Procesamiento de datos geoespaciales.",
-    details: `
-      <p>
-        Pipeline de datos que analiza información geográfica para generar recomendaciones 
-        inteligentes de rutas y destinos turísticos.
-      </p>
-    `,
-    tech: ["Python", "GeoPandas", "Docker"],
-    github: "https://github.com/tuusuario/travelmap"
-  }
+
+  // ========================================
+  // Puedes agregar más proyectos siguiendo el mismo formato de abajo
+  // ========================================
+
+
+  // project2: {
+  //   title: "ShopWave Analytics",
+  //   image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+  //   description: "Arquitectura de datos para analítica e-commerce.",
+  //   details: `
+  //     <p>
+  //       Sistema de ingesta y procesamiento de datos de ventas que permite analizar 
+  //       comportamiento de clientes, tendencias de compra y rendimiento de productos.
+  //     </p>
+  //   `,
+  //   tech: ["Spark", "AWS", "SQL"],
+  //   github: "https://github.com/tuusuario/shopwave"
+  // },
+
+  // project3: {
+  //   title: "TravelMap Insights",
+  //   image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
+  //   description: "Procesamiento de datos geoespaciales.",
+  //   details: `
+  //     <p>
+  //       Pipeline de datos que analiza información geográfica para generar recomendaciones 
+  //       inteligentes de rutas y destinos turísticos.
+  //     </p>
+  //   `,
+  //   tech: ["Python", "GeoPandas", "Docker"],
+  //   github: "https://github.com/tuusuario/travelmap"
+  // }
 
 };
 
