@@ -31,7 +31,7 @@ const projects = {
 
 
   // ========================================
-  // Puedes agregar más proyectos siguiendo el mismo formato de abajo
+  // Puedes agregar más proyectos siguiendo el mismo formato de project1
   // ========================================
 
 
