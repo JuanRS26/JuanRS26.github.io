@@ -5,8 +5,8 @@
 const projects = {
 
   project1: {
-    title: "TaskFlow Data Pipeline",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    title: "ETL Pipeline Taxis NYC",
+    image: "images/nyc-taxis-pipeline.jpg",
     description: "Pipeline de datos para análisis de productividad.",
     details: `
       <p>
@@ -17,15 +17,15 @@ const projects = {
       <div class="architecture">
         <div class="arch-box">Data Sources<br><span>App Events</span></div>
         <div class="arch-arrow">→</div>
-        <div class="arch-box">ETL Pipeline<br><span>Python + Airflow</span></div>
+        <div class="arch-box">ETL Pipeline<br><span>Python</span></div>
         <div class="arch-arrow">→</div>
         <div class="arch-box">Data Warehouse<br><span>PostgreSQL</span></div>
         <div class="arch-arrow">→</div>
         <div class="arch-box">Analytics<br><span>Dashboards</span></div>
       </div>
     `,
-    tech: ["Python", "Airflow", "PostgreSQL"],
-    github: "https://github.com/tuusuario/taskflow"
+    tech: ["Python", "MySQL"],
+    github: "https://github.com/juanrs26/Proyecto_Taxis_NYC"
   },
 
 
