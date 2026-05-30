@@ -6,7 +6,7 @@ const projects = {
 
   project1: {
     title: "ETL Pipeline Taxis NYC",
-    image: "images/nyc-taxis-pipeline.jpg",
+    image: "Images/nyc-taxis-pipeline.jpg",
     description: "Pipeline de datos para análisis de productividad.",
     details: `
       <p>
