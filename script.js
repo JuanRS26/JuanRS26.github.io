@@ -29,6 +29,30 @@ const projects = {
   },
 
 
+  project2: {
+    title: "ETL SuperStore",
+    image: "Images/SuperStore-Pipeline.jpg",
+    description: "Pipeline de datos para análisis de productividad.",
+    details: `
+      <p>
+        Este proyecto implementa un pipeline de datos que procesa información
+        de actividad de equipos remotos para generar métricas de productividad.
+      </p>
+
+      <div class="architecture">
+        <div class="arch-box">Data Sources<br><span>App Events</span></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box">ETL Pipeline<br><span>Python</span></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box">Data Warehouse<br><span>PostgreSQL</span></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box">Analytics<br><span>Dashboards</span></div>
+      </div>
+    `,
+    tech: ["Python", "MySQL"],
+    github: "https://github.com/JuanRS26/SuperStore-ETL-Pipeline"
+  }
+
 
   // ========================================
   // Puedes agregar más proyectos siguiendo el mismo formato de project1
